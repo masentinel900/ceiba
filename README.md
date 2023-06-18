@@ -1,6 +1,4 @@
-# Nombre del Proyecto
-
-Breve descripción del proyecto.
+# Prueba Ceiba
 
 ## Estructura de Capas
 
