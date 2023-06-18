@@ -15,11 +15,12 @@ La aplicación muestra una lista de usuarios obtenida desde una API externa. Los
 El flujo de trabajo es el siguiente:
 
 1. La aplicación se inicia y muestra la lista de usuarios.
-2. Los usuarios se obtienen desde la API utilizando el `UserRepository` y se muestran en la lista.
-3. El usuario puede ingresar un criterio de búsqueda en el campo de texto.
-4. Los usuarios se filtran según el criterio de búsqueda y se actualiza la lista.
-5. Al hacer clic en un usuario, se muestra la lista de publicaciones asociadas a ese usuario.
-6. Las publicaciones se obtienen desde la API utilizando el `PostRepository` y se muestran en la lista.
+2. Los usuarios se obtienen desde la API utilizando el `UserRepository`. Si hay datos almacenados localmente, se cargan los datos guardados en lugar de hacer una llamada a la API.
+3. Si no hay datos almacenados localmente o se requiere una actualización, se realiza una solicitud a la API y se guardan los datos en el almacenamiento local para su uso futuro.
+4. Los usuarios se muestran en la lista y se pueden filtrar mediante el campo de búsqueda.
+5. Al hacer clic en un usuario, se muestra la lista de publicaciones asociadas a ese usuario. Si hay datos almacenados localmente, se cargan los datos guardados en lugar de hacer una llamada a la API.
+6. Si no hay datos almacenados localmente o se requiere una actualización, se realiza una solicitud a la API y se guardan los datos en el almacenamiento local para su uso futuro.
+7. Las publicaciones se muestran en la lista.
 
 ## Requisitos del Sistema
 
